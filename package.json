@@ -1,0 +1,24 @@
+{
+  "name": "electron-google-auth",
+  "version": "0.0.1",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "google-auth-library": "^0.10.0",
+    "googleapis": "^20.1.0",
+    "qs": "^6.5.0",
+    "url": "^0.11.0"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "npm run babel && mocha --compilers js:babel-core/register test/index_test.js",
+    "babel": "babel src --out-dir lib",
+    "prepublish": "npm run babel"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "electron": "^1.6.11"
+  }
+}
